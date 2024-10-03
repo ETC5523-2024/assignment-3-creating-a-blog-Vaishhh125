@@ -63,3 +63,83 @@ high_risk_df <- high_risk_df %>%
 
 ```
 
+#### Industries Most at Risk
+
+The analysis reveals that certain industries are more exposed to automation risk than others. Surprisingly, **Education** tops the list as the sector most vulnerable to automation. Despite its traditionally human-centered nature, the rise of AI-powered tools like virtual learning platforms and automated grading systems is gradually reducing the need for human intervention.
+
+In addition, **Manufacturing** and **Transportation** are also heavily impacted by automation, as repetitive tasks are increasingly taken over by machines. **Entertainment** and **Telecommunications** follow closely behind, driven by the growing use of AI in content creation, customer service, and digital operations.
+
+In @fig-1, we can see a clear breakdown of the industries facing high automation risk.
+
+```{r fig-1, echo=FALSE, message=FALSE, warning=FALSE}
+
+# Plot: Industries with High Automation Risk
+ggplot(high_risk_df, aes(x = reorder(Industry, -n), y = n)) +
+  geom_bar(stat = "identity", fill = "lightblue", color = "black") +  # Set fill to a single color
+  labs(
+    x = "Industry", 
+    y = "Number of High Risk Jobs",
+    caption = "Figure 1: Industries with High Automation Risk"  # Add caption below the plot
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(legend.position = "none")
+
+
+
+
+```
+
+This @fig-1 highlights the industries most exposed to automation, with Education, Manufacturing, and Transportation emerging as the most vulnerable sectors.
+
+#### Jobs Most Vulnerable to Automation
+
+When it comes to specific job roles, the results are equally striking. **Cybersecurity Analysts**, despite their highly specialized skill set, top the list of high-risk jobs. This reflects the growing role of AI in automating threat detection and security protocols, reducing the need for human oversight.
+
+Other roles, such as **Sales Managers**, **AI Researchers**, and **Marketing Specialists**, also face significant risks. AI is increasingly taking over customer relationship management, research tasks, and data analysis. This challenges the assumption that advanced technical skills shield workers from automation risks.
+
+In @fig-2, you can see a visual representation of the top 5 job titles most vulnerable to automation.
+
+```{r fig-2, echo=FALSE, message=FALSE, warning=FALSE}
+# Filter for jobs at high automation risk
+high_risk_jobs <- df %>% filter(Automation_Risk == "High")
+
+# Get the top 10 job titles with the highest frequency of high automation risk
+top_5_high_risk_jobs <- high_risk_jobs %>% 
+  count(Job_Title, sort = TRUE) %>% 
+  top_n(5, n)
+
+top_10_high_risk_jobs <- high_risk_jobs %>% 
+  count(Job_Title, sort = TRUE) %>% 
+  top_n(10, n)
+
+# Create a bar plot for the top 10 high-risk job titles
+ggplot(top_5_high_risk_jobs, aes(x = reorder(Job_Title, n), y = n)) +
+  geom_bar(stat = "identity", fill = "lightblue", color = "black") +
+  coord_flip() +
+  labs(
+    x = "Job Title", 
+    y = "Number of Jobs",
+    caption = "Figure 2: Top 5 Jobs at High Automation Risk"  # Add caption below the plot
+  ) +
+  theme_minimal()
+
+
+
+```
+
+This @fig-2 shows the job roles most at risk of being automated, with Cybersecurity Analysts, Sales Managers, and AI Researchers leading the list.
+
+In addition to the top three jobs at high risk of automation, several other roles from various industries also face significant vulnerability, as shown in @tbl-1. **Data Scientists** and **Marketing Specialists**, both of which require advanced analytical and creative skills, are surprisingly at high risk, with AI increasingly taking over tasks like data analysis and content generation. Similarly, **Product Managers** and **UX Designers,** known for their strategic and design roles, are being impacted as AI tools streamline product development and user experience prototyping. Even traditional roles like **HR Managers** and **Operations Managers** are affected as AI is increasingly automating tasks such as recruitment, performance management, and operational workflows, demonstrating the widespread reach of automation across diverse job functions.
+
+```{r tbl-1, echo=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+# Display the top 10 high-risk job titles as a table
+kable(top_10_high_risk_jobs, 
+      col.names = c("Job Title", "Number of High Risk Jobs"),
+      caption = "Top 10 Jobs at High Automation Risk*")  # Add small note to the caption
+
+
+```
+
+\*Based on the dataset used for analysis
