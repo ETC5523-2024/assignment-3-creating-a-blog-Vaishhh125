@@ -1,0 +1,15 @@
+{
+  "hash": "fb33b56eb8cd7b965d1d18165fd72cea",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"AI and Automation: The Tipping Point for High-Risk Jobs\"\nauthor: \"Vaishnavi Amuda\"\ndate: \"2024-10-04\"\ncategories: [\"Automation\", \"Data Science\"]\nformat: html\neditor: visual\n---\n\n\nThe rapid rise of artificial intelligence (AI) and automation is reshaping industries and altering the nature of work. This blog post explores which sectors and job roles are most at risk of being automated, revealing surprising insights about the future of work.\n\nWith AI adoption accelerating across industries, the workforce is facing unprecedented disruption. Automation is not just affecting repetitive, low-skill jobs but also highly technical roles. This analysis aims to pinpoint which industries and job titles are most vulnerable to automation, providing a data-driven perspective on the future of work.\n\n**Data Source** : The dataset used for this analysis, **AI and Job Market Insights**, was sourced from Kaggle. It includes information on various job roles, industries, and the level of risk associated with automation for each. You can access the dataset here: [Kaggle Dataset](https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights).\n\n**Variables**\n\n-   **Job_Title**: The job title being analyzed.\n\n-   **Industry**: The industry to which the job belongs.\n\n-   **AI_Adoption_Level**: The level of AI adoption in the industry (low, medium, high).\n\n-   **Automation_Risk**: Likelihood that the job will be automated (low, medium, high).\n\n-   **Required_Skills**: Skills necessary for the job role.\n\n-   **Remote_Friendly**: Whether the job allows for remote work.\n\n-   **Job_Growth_Projection**: The expected growth or decline of jobs in this sector.\n\n**Data Cleaning Process**\n\n-   **Load the Dataset:** I began by loading the dataset, which contains various job roles and industries, and how they are impacted by AI and automation.\n\n-   **Convert Columns to Factors:** Two key columns in the dataset, AI Adoption Level and Automation Risk, were converted to factors. This ensures that categorical variables like 'Low', 'Medium', and 'High' are treated as discrete levels, improving the accuracy of data analysis.\n\n-   **Filter for High Automation Risk:** To narrow the analysis to the most relevant jobs, I filtered the dataset to include only those with high automation risk. This helps focus the analysis on industries and job roles that are particularly vulnerable to AI and automation.\n\n-   **Summarize Data:** I then summarized the data by counting the number of high-risk jobs in each industry. This aggregation was necessary for generating clear and informative visualizations.\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

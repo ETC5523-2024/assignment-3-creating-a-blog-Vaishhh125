@@ -1,12 +1,65 @@
 ---
-title: "Welcome To My Blog Template"
-author: "Emi Tanaka"
-date: "2022-07-18"
-categories: [news]
+title: "AI and Automation: The Tipping Point for High-Risk Jobs"
+author: "Vaishnavi Amuda"
+date: "2024-10-04"
+categories: ["Automation", "Data Science"]
+format: html
+editor: visual
 ---
 
-This is the first post in a Quarto blog. Welcome!
+The rapid rise of artificial intelligence (AI) and automation is reshaping industries and altering the nature of work. This blog post explores which sectors and job roles are most at risk of being automated, revealing surprising insights about the future of work.
 
-![](thumbnail.jpg)
+With AI adoption accelerating across industries, the workforce is facing unprecedented disruption. Automation is not just affecting repetitive, low-skill jobs but also highly technical roles. This analysis aims to pinpoint which industries and job titles are most vulnerable to automation, providing a data-driven perspective on the future of work.
 
+**Data Source** : The dataset used for this analysis, **AI and Job Market Insights**, was sourced from Kaggle. It includes information on various job roles, industries, and the level of risk associated with automation for each. You can access the dataset here: [Kaggle Dataset](https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights).
+
+**Variables**
+
+-   **Job_Title**: The job title being analyzed.
+
+-   **Industry**: The industry to which the job belongs.
+
+-   **AI_Adoption_Level**: The level of AI adoption in the industry (low, medium, high).
+
+-   **Automation_Risk**: Likelihood that the job will be automated (low, medium, high).
+
+-   **Required_Skills**: Skills necessary for the job role.
+
+-   **Remote_Friendly**: Whether the job allows for remote work.
+
+-   **Job_Growth_Projection**: The expected growth or decline of jobs in this sector.
+
+**Data Cleaning Process**
+
+-   **Load the Dataset:** I began by loading the dataset, which contains various job roles and industries, and how they are impacted by AI and automation.
+
+-   **Convert Columns to Factors:** Two key columns in the dataset, AI Adoption Level and Automation Risk, were converted to factors. This ensures that categorical variables like 'Low', 'Medium', and 'High' are treated as discrete levels, improving the accuracy of data analysis.
+
+-   **Filter for High Automation Risk:** To narrow the analysis to the most relevant jobs, I filtered the dataset to include only those with high automation risk. This helps focus the analysis on industries and job roles that are particularly vulnerable to AI and automation.
+
+-   **Summarize Data:** I then summarized the data by counting the number of high-risk jobs in each industry. This aggregation was necessary for generating clear and informative visualizations.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Load the dataset
+df <- read_csv("data /ai_job_market_insights.csv", show_col_types = FALSE)
+
+# Convert relevant columns to factors
+df$AI_Adoption_Level <- factor(df$AI_Adoption_Level, levels = c('Low', 'Medium', 'High'))
+df$Automation_Risk <- factor(df$Automation_Risk, levels = c('Low', 'Medium', 'High'))
+
+# Filter for high automation risk
+high_risk_df <- df %>%
+  filter(Automation_Risk == "High")
+
+# Summarize data by counting high-risk jobs in each industry
+high_risk_df <- high_risk_df %>%
+  count(Industry) %>%
+  arrange(desc(n))
+
+```
 

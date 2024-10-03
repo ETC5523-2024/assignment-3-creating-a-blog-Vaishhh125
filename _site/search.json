@@ -19,5 +19,19 @@
     "title": "About",
     "section": "Connect with Me",
     "text": "Connect with Me"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "AI and Automation: The Tipping Point for High-Risk Jobs",
+    "section": "",
+    "text": "The rapid rise of artificial intelligence (AI) and automation is reshaping industries and altering the nature of work. This blog post explores which sectors and job roles are most at risk of being automated, revealing surprising insights about the future of work.\nWith AI adoption accelerating across industries, the workforce is facing unprecedented disruption. Automation is not just affecting repetitive, low-skill jobs but also highly technical roles. This analysis aims to pinpoint which industries and job titles are most vulnerable to automation, providing a data-driven perspective on the future of work.\nData Source : The dataset used for this analysis, AI and Job Market Insights, was sourced from Kaggle. It includes information on various job roles, industries, and the level of risk associated with automation for each. You can access the dataset here: Kaggle Dataset.\nVariables\n\nJob_Title: The job title being analyzed.\nIndustry: The industry to which the job belongs.\nAI_Adoption_Level: The level of AI adoption in the industry (low, medium, high).\nAutomation_Risk: Likelihood that the job will be automated (low, medium, high).\nRequired_Skills: Skills necessary for the job role.\nRemote_Friendly: Whether the job allows for remote work.\nJob_Growth_Projection: The expected growth or decline of jobs in this sector.\n\nData Cleaning Process\n\nLoad the Dataset: I began by loading the dataset, which contains various job roles and industries, and how they are impacted by AI and automation.\nConvert Columns to Factors: Two key columns in the dataset, AI Adoption Level and Automation Risk, were converted to factors. This ensures that categorical variables like ‘Low’, ‘Medium’, and ‘High’ are treated as discrete levels, improving the accuracy of data analysis.\nFilter for High Automation Risk: To narrow the analysis to the most relevant jobs, I filtered the dataset to include only those with high automation risk. This helps focus the analysis on industries and job roles that are particularly vulnerable to AI and automation.\nSummarize Data: I then summarized the data by counting the number of high-risk jobs in each industry. This aggregation was necessary for generating clear and informative visualizations."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC5523 Blog Assessment",
+    "section": "",
+    "text": "AI and Automation: The Tipping Point for High-Risk Jobs\n\n\n\n\n\n\nAutomation\n\n\nData Science\n\n\n\n\n\n\n\n\n\nOct 4, 2024\n\n\nVaishnavi Amuda\n\n\n\n\n\n\nNo matching items"
   }
 ]
