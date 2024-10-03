@@ -1,13 +1,28 @@
 ---
 title: "About"
-image: profile.jpg
+image: profilepic.jpg
 about:
   template: jolla
   links:
     - icon: github
       text: Github
-      href: https://github.com/etc5523-2022
+      href: https://github.com/Vaishhh125
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/vaishnaviamuda12
+---
+
+## Vaishnavi Amuda
+
+I am a student pursuing a Master’s in Business Analytics at Monash University. With a strong foundation in data analysis, I am passionate about working in **consulting roles** where I can leverage data-driven insights to solve business challenges and improve decision-making processes.
+
+I aspire to work with leading firms in the consulting industry, helping businesses unlock the full potential of their data to achieve their strategic goals.
+
+Beyond my studies, I have several hobbies that keep me engaged and creative. I enjoy creating whimsical and lighthearted doodles in my free time, which allows me to relax and have fun with my drawings. I also love solving puzzles, especially Sudoku, dominoes, and word search, as they help keep my mind sharp. In my downtime, I unwind by watching some of my favorite sitcoms, and I also find joy in experimenting with new recipes and cooking delicious meals.
 
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+## Connect with Me
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/Vaishhh125)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vaishnaviamuda12)
