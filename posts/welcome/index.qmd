@@ -143,3 +143,20 @@ kable(top_10_high_risk_jobs,
 ```
 
 \*Based on the dataset used for analysis
+
+#### Conclusion
+
+As AI and automation continue to reshape industries, the impact extends beyond low-skill, repetitive tasks, affecting even highly technical roles. From cybersecurity analysts to AI researchers, no sector is entirely shielded from automation, as our analysis has shown. Surprisingly, fields like education, manufacturing, and transportation are particularly vulnerable, with AI automating everything from assembly lines to virtual learning systems.
+
+At the same time, roles that involve significant human interaction, such as those in retail and healthcare, are also feeling the effects. Self-checkout technologies and AI-driven inventory systems are revolutionizing retail, while AI-assisted diagnostics and administrative tools are making their way into healthcare.
+
+The key takeaway from this analysis is clear: the future of work is evolving rapidly, and both businesses and employees must focus on developing skills that are less susceptible to automation. This means not only mastering technical expertise but also nurturing creativity, emotional intelligence, and problem-solving abilities—qualities that machines have yet to replicate. As the job market shifts, continuous adaptation will be essential for staying ahead in an AI-driven world.
+
+#### References
+
+1.  Manyika, J, Lund, S, Chui, M, Bughin, J, Woetzel, J, Batra, P, Ko, R & Sanghvi, S 2017, Jobs lost, jobs gained: What the future of work will mean for jobs, skills, and wages, McKinsey & Company. <https://www.mckinsey.com/featured-insights/future-of-work/jobs-lost-jobs-gained-what-the-future-of-work-will-mean-for-jobs-skills-and-wages>.
+
+2.  LinkedIn 2024, Linkedin.com, viewed 30 September 2024, <https://www.linkedin.com/pulse/future-work-ais-impact-jobs-skills-2024-dave-balroop-2u28c/>.
+
+
+
