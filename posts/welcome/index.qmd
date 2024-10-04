@@ -1,5 +1,5 @@
 ---
-title: "AI and Automation: The Tipping Point for High-Risk Jobs"
+title: "AI and Automation: Reshaping the Landscape of High-Risk Industries and Jobs"
 author: "Vaishnavi Amuda"
 date: "2024-10-04"
 categories: ["Automation", "Data Science"]
@@ -13,7 +13,7 @@ With AI adoption accelerating across industries, the workforce is facing unprece
 
 *Data Source* : The dataset used for this analysis, *AI and Job Market Insights*, was sourced from Kaggle. It includes information on various job roles, industries, and the level of risk associated with automation for each. You can access the dataset here: [Kaggle Dataset](https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights).
 
-*Variables*
+*Variables* of the dataset:
 
 -   *Job_Title*: The job title being analyzed.
 
