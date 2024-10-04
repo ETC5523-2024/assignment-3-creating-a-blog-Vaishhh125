@@ -9,13 +9,13 @@ body {
 /* Primary heading (h1) in dark pastel blue */
 h1 {
   font-family: "Times New Roman", Georgia, serif;
-  color: #779ECB;  /* Dark pastel blue for h1 */
+  color: #779ECB !important;  /* Dark pastel blue for h1 */
 }
 
 /* Secondary heading (h2) and other headings in dark blue-grey */
 h2, h3, h4, h5, h6 {
   font-family: "Times New Roman", Georgia, serif;
-  color: #2c3e50;  /* Dark blue-grey for h2 to h6 */
+  color: #2c3e50 !important;  /* Dark blue-grey for h2 to h6 */
 }
 
 /* Change link color for readability */
