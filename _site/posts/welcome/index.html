@@ -159,28 +159,22 @@ ul.task-list li input[type="checkbox"] {
 
 <p>The rapid rise of artificial intelligence (AI) and automation is reshaping industries and altering the nature of work. This blog post explores which sectors and job roles are most at risk of being automated, revealing surprising insights about the future of work.</p>
 <p>With AI adoption accelerating across industries, the workforce is facing unprecedented disruption. Automation is not just affecting repetitive, low-skill jobs but also highly technical roles. This analysis aims to pinpoint which industries and job titles are most vulnerable to automation, providing a data-driven perspective on the future of work.</p>
-<p><strong>Data Source</strong> : The dataset used for this analysis, <strong>AI and Job Market Insights</strong>, was sourced from Kaggle. It includes information on various job roles, industries, and the level of risk associated with automation for each. You can access the dataset here: <a href="https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights">Kaggle Dataset</a>.</p>
-<p><strong>Variables</strong></p>
+<p><em>Data Source</em> : The dataset used for this analysis, <em>AI and Job Market Insights</em>, was sourced from Kaggle. It includes information on various job roles, industries, and the level of risk associated with automation for each. You can access the dataset here: <a href="https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights">Kaggle Dataset</a>.</p>
+<p><em>Variables</em></p>
 <ul>
-<li><p><strong>Job_Title</strong>: The job title being analyzed.</p></li>
-<li><p><strong>Industry</strong>: The industry to which the job belongs.</p></li>
-<li><p><strong>AI_Adoption_Level</strong>: The level of AI adoption in the industry (low, medium, high).</p></li>
-<li><p><strong>Automation_Risk</strong>: Likelihood that the job will be automated (low, medium, high).</p></li>
-<li><p><strong>Required_Skills</strong>: Skills necessary for the job role.</p></li>
-<li><p><strong>Remote_Friendly</strong>: Whether the job allows for remote work.</p></li>
-<li><p><strong>Job_Growth_Projection</strong>: The expected growth or decline of jobs in this sector.</p></li>
+<li><p><em>Job_Title</em>: The job title being analyzed.</p></li>
+<li><p><em>Industry</em>: The industry to which the job belongs.</p></li>
+<li><p><em>AI_Adoption_Level</em>: The level of AI adoption in the industry (low, medium, high).</p></li>
+<li><p><em>Automation_Risk</em>: Likelihood that the job will be automated (low, medium, high).</p></li>
+<li><p><em>Required_Skills</em>: Skills necessary for the job role.</p></li>
+<li><p><em>Remote_Friendly</em>: Whether the job allows for remote work.</p></li>
+<li><p><em>Job_Growth_Projection</em>: The expected growth or decline of jobs in this sector.</p></li>
 </ul>
-<p><strong>Data Cleaning Process</strong></p>
-<ul>
-<li><p><strong>Load the Dataset:</strong> I began by loading the dataset, which contains various job roles and industries, and how they are impacted by AI and automation.</p></li>
-<li><p><strong>Convert Columns to Factors:</strong> Two key columns in the dataset, AI Adoption Level and Automation Risk, were converted to factors. This ensures that categorical variables like ‘Low’, ‘Medium’, and ‘High’ are treated as discrete levels, improving the accuracy of data analysis.</p></li>
-<li><p><strong>Filter for High Automation Risk:</strong> To narrow the analysis to the most relevant jobs, I filtered the dataset to include only those with high automation risk. This helps focus the analysis on industries and job roles that are particularly vulnerable to AI and automation.</p></li>
-<li><p><strong>Summarize Data:</strong> I then summarized the data by counting the number of high-risk jobs in each industry. This aggregation was necessary for generating clear and informative visualizations.</p></li>
-</ul>
-<section id="industries-most-at-risk" class="level4">
-<h4 class="anchored" data-anchor-id="industries-most-at-risk">Industries Most at Risk</h4>
-<p>The analysis reveals that certain industries are more exposed to automation risk than others. Surprisingly, <strong>Education</strong> tops the list as the sector most vulnerable to automation. Despite its traditionally human-centered nature, the rise of AI-powered tools like virtual learning platforms and automated grading systems is gradually reducing the need for human intervention.</p>
-<p>In addition, <strong>Manufacturing</strong> and <strong>Transportation</strong> are also heavily impacted by automation, as repetitive tasks are increasingly taken over by machines. <strong>Entertainment</strong> and <strong>Telecommunications</strong> follow closely behind, driven by the growing use of AI in content creation, customer service, and digital operations.</p>
+<p><em>Data Cleaning Process</em>: I initiated the data cleaning process by loading a comprehensive dataset encompassing various industries. I converted key columns—AI Adoption Level and Automation Risk—into factors to enhance the accuracy of the analysis. Subsequently, I filtered the dataset to focus specifically on jobs at high risk of automation, thereby targeting the most vulnerable sectors. Finally, I summarized the findings by counting the number of high-risk positions within each industry, which will facilitate the creation of clear and informative visualizations.</p>
+<section id="which-industries-are-facing-the-biggest-challenges" class="level4">
+<h4 class="anchored" data-anchor-id="which-industries-are-facing-the-biggest-challenges">Which Industries are Facing the Biggest Challenges?</h4>
+<p>The analysis reveals that certain industries are more exposed to automation risk than others. Surprisingly, <em>Education</em> tops the list as the sector most vulnerable to automation. Despite its traditionally human-centered nature, the rise of AI-powered tools like virtual learning platforms and automated grading systems is gradually reducing the need for human intervention.</p>
+<p>In addition, <em>Manufacturing</em> and <em>Transportation</em> are also heavily impacted by automation, as repetitive tasks are increasingly taken over by machines. <em>Entertainment</em> and <em>Telecommunications</em> follow closely behind, driven by the growing use of AI in content creation, customer service, and digital operations.</p>
 <p>In <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>, we can see a clear breakdown of the industries facing high automation risk.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -198,10 +192,10 @@ Figure&nbsp;1
 </div>
 <p>This <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a> highlights the industries most exposed to automation, with Education, Manufacturing, and Transportation emerging as the most vulnerable sectors.</p>
 </section>
-<section id="jobs-most-vulnerable-to-automation" class="level4">
-<h4 class="anchored" data-anchor-id="jobs-most-vulnerable-to-automation">Jobs Most Vulnerable to Automation</h4>
-<p>When it comes to specific job roles, the results are equally striking. <strong>Cybersecurity Analysts</strong>, despite their highly specialized skill set, top the list of high-risk jobs. This reflects the growing role of AI in automating threat detection and security protocols, reducing the need for human oversight.</p>
-<p>Other roles, such as <strong>Sales Managers</strong>, <strong>AI Researchers</strong>, and <strong>Marketing Specialists</strong>, also face significant risks. AI is increasingly taking over customer relationship management, research tasks, and data analysis. This challenges the assumption that advanced technical skills shield workers from automation risks.</p>
+<section id="which-jobs-are-at-high-risk-of-automation" class="level4">
+<h4 class="anchored" data-anchor-id="which-jobs-are-at-high-risk-of-automation">Which Jobs are at High Risk of Automation?</h4>
+<p>When it comes to specific job roles, the results are equally striking. <em>Cybersecurity Analysts</em>, despite their highly specialized skill set, top the list of high-risk jobs. This reflects the growing role of AI in automating threat detection and security protocols, reducing the need for human oversight.</p>
+<p>Other roles, such as <em>Sales Managers</em>, <em>AI Researchers</em>, and <em>Marketing Specialists</em>, also face significant risks. AI is increasingly taking over customer relationship management, research tasks, and data analysis. This challenges the assumption that advanced technical skills shield workers from automation risks.</p>
 <p>In <a href="#fig-2" class="quarto-xref">Figure&nbsp;2</a>, you can see a visual representation of the top 5 job titles most vulnerable to automation.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -218,7 +212,7 @@ Figure&nbsp;2
 </div>
 </div>
 <p>This <a href="#fig-2" class="quarto-xref">Figure&nbsp;2</a> shows the job roles most at risk of being automated, with Cybersecurity Analysts, Sales Managers, and AI Researchers leading the list.</p>
-<p>In addition to the top three jobs at high risk of automation, several other roles from various industries also face significant vulnerability, as shown in <a href="#tbl-1" class="quarto-xref">Table&nbsp;1</a>. <strong>Data Scientists</strong> and <strong>Marketing Specialists</strong>, both of which require advanced analytical and creative skills, are surprisingly at high risk, with AI increasingly taking over tasks like data analysis and content generation. Similarly, <strong>Product Managers</strong> and <strong>UX Designers,</strong> known for their strategic and design roles, are being impacted as AI tools streamline product development and user experience prototyping. Even traditional roles like <strong>HR Managers</strong> and <strong>Operations Managers</strong> are affected as AI is increasingly automating tasks such as recruitment, performance management, and operational workflows, demonstrating the widespread reach of automation across diverse job functions.</p>
+<p>In addition to the top three jobs at high risk of automation, several other roles from various industries also face significant vulnerability, as shown in <a href="#tbl-1" class="quarto-xref">Table&nbsp;1</a>. <em>Data Scientists</em> and <em>Marketing Specialists</em>, both of which require advanced analytical and creative skills, are surprisingly at high risk, with AI increasingly taking over tasks like data analysis and content generation. Similarly, <em>Product Managers</em> and <em>UX Designers,</em> known for their strategic and design roles, are being impacted as AI tools streamline product development and user experience prototyping. Even traditional roles like <em>HR Managers</em> and <em>Operations Managers</em> are affected as AI is increasingly automating tasks such as recruitment, performance management, and operational workflows, demonstrating the widespread reach of automation across diverse job functions.</p>
 <div class="cell">
 <div id="tbl-1" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -288,7 +282,7 @@ Table&nbsp;1: Top 10 Jobs at High Automation Risk*
 <h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
 <p>As AI and automation continue to reshape industries, the impact extends beyond low-skill, repetitive tasks, affecting even highly technical roles. From cybersecurity analysts to AI researchers, no sector is entirely shielded from automation, as our analysis has shown. Surprisingly, fields like education, manufacturing, and transportation are particularly vulnerable, with AI automating everything from assembly lines to virtual learning systems.</p>
 <p>At the same time, roles that involve significant human interaction, such as those in retail and healthcare, are also feeling the effects. Self-checkout technologies and AI-driven inventory systems are revolutionizing retail, while AI-assisted diagnostics and administrative tools are making their way into healthcare.</p>
-<p>The key takeaway from this analysis is clear: the future of work is evolving rapidly, and both businesses and employees must focus on developing skills that are less susceptible to automation. This means not only mastering technical expertise but also nurturing creativity, emotional intelligence, and problem-solving abilities—qualities that machines have yet to replicate. As the job market shifts, continuous adaptation will be essential for staying ahead in an AI-driven world.</p>
+<p>The key takeaway from this analysis is clear: the future of work is evolving rapidly, and both businesses and employees must focus on developing skills that are less susceptible to automation. This means not only mastering technical expertise but also nurturing creativity, emotional intelligence, and problem-solving abilities, qualities that machines have yet to replicate. As the job market shifts, continuous adaptation will be essential for staying ahead in an AI-driven world.</p>
 </section>
 <section id="references" class="level4">
 <h4 class="anchored" data-anchor-id="references">References</h4>

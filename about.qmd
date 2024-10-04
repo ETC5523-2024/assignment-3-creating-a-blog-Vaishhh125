@@ -7,7 +7,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/Vaishhh125
-    - icon: linkedin
+    - icon: linkedIn
       text: LinkedIn
       href: https://www.linkedin.com/in/vaishnaviamuda12
 ---
