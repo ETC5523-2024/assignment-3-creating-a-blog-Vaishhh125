@@ -12,6 +12,9 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/vaishnaviamuda12
+    - icon: envelope
+      text: Email
+      href: mailto:vaishnaviamuda12@gmail.com
   id: ppc
 ---
 
@@ -69,3 +72,4 @@ _Sept 2020 - June 2023_
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/Vaishhh125)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vaishnaviamuda12)
+[![Email](https://img.shields.io/badge/Email-vaishnaviamuda12@gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:vaishnaviamuda12@gmail.com)
